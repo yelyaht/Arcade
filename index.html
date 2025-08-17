@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Arcade</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Hayley Tymony">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="wrap">
+    <h1>Arcade</h1>
+    <p class="hint">Choose a game. All gameplay uses prompts and alerts.</p>
+
+    <!-- Buttons call 3 different fuction types. -->
+    <div class="buttons">
+      <button class="btn game-btn" onclick="location.href='html/guess/guess.html'">Guessing Games</button>
+      <button class="btn game-btn" onclick="location.href='html/magic/magic.html'">Consult the Oracle</button>
+      <button class="btn game-btn" onclick="location.href='html/BNH/bnh.html'">Bear • Ninja • Hunter</button>
+    </div>
+
+    <!-- Placement for farewell + reload button at the very end -->
+    <div id="farewell"></div>
+  </main>
+
+  <script src="js/script.js?v=3"></script>
+</body>
+</html>
