@@ -1,0 +1,193 @@
+/* ====== Bonus-like theme ====== */
+:root {
+  --bg:        #0b0f1a;   
+  --panel:     #11192a;   
+  --ink:       #eaf0ff;   
+  --muted:     #9fb0d7;   
+  --accent:    #9d7fff;   
+  --accent-2:  #4db7ff;   
+  --shadow:    0 10px 30px rgba(0,0,0,.35);
+  --ring:      0 0 0 3px rgba(157,127,255,.25);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  background: linear-gradient(135deg, #1a1b2e 0%, #0b0d1c 100%);
+  color: #39FF14;
+  margin: 0;
+  padding: 24px;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  outline: 3px solid hotpink !important;
+}
+
+/* ====== Layout ====== */
+.wrap {
+  max-width: 760px;
+  margin: 7vh auto;
+  padding: 28px;
+  background: var(--panel);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(255, 255, 255, .06);
+  width: min(850px, 92vw);
+}
+
+.panel {
+  background: rgba(17, 19, 42, 0.92);
+  border: 1px solid #2a2c52;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.35);
+}
+
+.hidden {
+  display: none;
+}
+
+.tip {
+  text-align: center;
+  margin: 0 0 16px;
+  color: #BC13FE;
+  opacity: .9;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-size: 2.2rem;
+  color: #bc13fe;
+  -webkit-text-stroke: 1.25px rgba(10, 10, 20, 0.8);
+  text-shadow:
+    0 0 0.5px rgba(10, 10, 20, 0.85),
+    0 0 2px   rgba(10, 10, 20, 0.85),
+    0 0 8px   rgba(188, 19, 254, 0.55);
+}
+
+.hint {
+  margin: 0 0 24px;
+  color: var(--muted);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin: 0 0 10px;
+}
+
+/* ====== Buttons ====== */
+.button {
+   display: inline-block;
+   border: 1px solid #BC13FE;
+   background: #23264a;
+   color: #39FF14;
+   padding: 10px 14px;
+   border-radius: 10px;
+   cursor: pointer;
+   text-decoration: none;
+   font-weight: 700;
+   box-shadow: 0 0 6px rgba(188,19,254,0.35);
+ }
+
+ .btn:hover {
+   filter: brightness(1.08);
+ }
+
+button:active {
+  transform: translateY(0);
+}
+
+button:focus-visible {
+  outline: none;
+  box-shadow: var(--ring);
+}
+
+.game-btn {
+  display: inline-block;
+  border: 1px solid #BC13FE;
+  background: #23264a;
+  color: #39FF14;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 0 6px rgba(188,19,254,0.35);
+}
+
+.game-btn:hover {
+  background: linear-gradient(180deg, #2a3a6a, #223055);
+  border-color: rgba(157, 127, 255, .55);
+  filter: brightness(1.08);
+}
+
+/* Secondary (used for the final reload button) */
+#farewell button {
+  background:transparent;
+  border:1px solid rgba(157,127,255,.45);
+}
+
+#farewell button:hover {
+  background:rgba(157,127,255,.10);
+}
+
+/* Farewell area */
+#farewell{
+  margin-top:20px;
+  padding-top:14px;
+  border-top:1px solid rgba(255,255,255,.08);
+}
+
+#farewell p {
+  margin:0 0 12px;
+  color:var(--muted);
+}
+
+/* Color-coded results */
+.win  {
+  color: #BC13FE;
+}
+
+.lose {
+  color: #BC13FE;
+}
+
+.draw {
+  color: #808080;
+}
+
+/* Reload button: bright and readable */
+#reloadBtn {
+  background: #BC13FE;        
+  border-color: #BC13FE;
+  color: #BC13FE;             
+  text-shadow: none;
+}
+
+#reloadBtn:hover {
+  filter: brightness(1.08);
+  background: #c53bff;       
+  border-color: #c53bff;
+}
+
+#reloadBtn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(188, 19, 254, 0.35); 
+}
