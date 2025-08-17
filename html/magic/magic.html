@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Oracle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Hayley Tymony">
+  <link rel="stylesheet" href="../../css/magic/magic.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- top nav back to Arcade -->
+    <nav class="topbar">
+      <a class="btn secondary" href="../../index.html?farewell=1" aria-label="Back to Arcade">← Back to Arcade</a>
+    </nav>
+
+    <!-- Start Panel -->
+    <section id="startPanel" class="panel">
+      <h1>Consult the Oracle — Prompt Match</h1>
+      <p class="tip">Click <strong>Start</strong> to begin. You’ll use <code>prompt</code> and <code>alert</code> during play. When the match ends, a summary and history appear below.</p>
+
+      <h2>How it works</h2>
+      <ul>
+        <li>Choose the target favorable omens (e.g., first to 3).</li>
+        <li>Each round: ask any yes/no question to the Oracle.</li>
+        <li><strong>Favorable</strong> replies score for you; <strong>Unfavorable</strong> score for the shadows; “hazy/ask again” gives no points.</li>
+      </ul>
+
+      <p style="margin-top:12px;">
+        <button id="playBtn" class="btn">Start</button>
+      </p>
+    </section>
+
+    <!-- Results Panel -->
+    <div id="resultsPanel" class="panel hidden" aria-live="polite">
+      <div id="output"><em>Your match results will appear here…</em></div>
+      <p style="margin-top:12px;">
+        <button id="playAgainBtn" class="btn">Play Again</button>
+        <button id="backBtn" class="btn secondary">Back to Summary</button>
+      </p>
+    </div>
+  </div>
+
+  <script src="../../js/magic/magic.js"></script>
+</body>
+</html>
