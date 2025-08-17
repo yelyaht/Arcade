@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guessing Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Hayley Tymony">
+  <link rel="stylesheet" href="../../css/guess/guess.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- top nav back to Arcade -->
+    <nav class="topbar">
+      <a class="btn secondary" href="../../index.html?farewell=1" aria-label="Back to Arcade">← Back to Arcade</a>
+    </nav>
+
+    <!-- Start Panel -->
+    <section id="startPanel" class="panel">
+      <h1>Guessing Game</h1>
+      <p class="tip">Click <strong>Play</strong> to begin. You’ll use <code>prompt</code> and <code>alert</code> during play. When the session ends, a summary and history appear below.</p>
+
+      <h2>How it works</h2>
+      <ul>
+        <li>I’m thinking of a number between 1 and 10 (inclusive).</li>
+        <li>Enter a whole number; I’ll tell you if it’s too high or too low.</li>
+        <li>Type <strong>n</strong> or <strong>no</strong> (or press Cancel) to end the session.</li>
+      </ul>
+
+      <p style="margin-top:12px;">
+        <button id="playBtn" class="btn">Play</button>
+      </p>
+    </section>
+
+    <!-- Results Panel -->
+    <div id="resultsPanel" class="panel hidden" aria-live="polite">
+      <div id="output"><em>Your session summary will appear here…</em></div>
+      <p style="margin-top:12px;">
+        <button id="playAgainBtn" class="btn">Play Again</button>
+        <button id="backBtn" class="btn secondary">Back to Summary</button>
+      </p>
+    </div>
+  </div>
+
+  <script src="../../js/guess/guess.js"></script>
+</body>
+</html>
