@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BNH — Prompt Tournament (Start → Play → Results)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Hayley Tymony">
+  <link rel="stylesheet" href="../../css/BNH/bnh.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="wrap">
+    <nav class="topbar">
+      <a class="btn secondary" href="../../index.html?farewell=1" aria-label="Back to Arcade">← Back to Arcade</a>
+    </nav>
+    <!-- Start Panel -->
+    <section id="startPanel" class="panel">
+      <h1>Bear · Ninja · Hunter — Prompt Tournament</h1>
+      <p class="tip">Click <strong>Play Match</strong> to begin. You’ll use <code>prompt</code>, <code>alert</code>, and <code>confirm</code> during the match. After it ends, your colored results and history appear below.</p>
+
+      <h2>How it works</h2>
+      <ul>
+        <li>Choose the target wins (e.g., play to 3).</li>
+        <li>Each round: type <strong>B</strong>, <strong>N</strong>, or <strong>H</strong> (or the full word).</li>
+        <li>Computer picks randomly; first to target wins.</li>
+      </ul>
+      <p style="margin-top:12px;">
+        <button id="playBtn" class="btn">Play Match</button>
+      </p>
+    </section>
+
+    <!-- Results Panel -->
+    <div id="resultsPanel" class="panel hidden">
+      <div id="output"><em>Your match results will appear here…</em></div>
+      <p style="margin-top:12px;">
+        <button id="playAgainBtn" class="btn">Play Again</button>
+        <button id="backBtn" class="btn secondary">Back to Summary</button>
+      </p>
+    </div>
+
+    <script src="../../js/BNH/bnh.js"></script>
+
+  </div>
+</body>
+</html>
